@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class moving_the_object : MonoBehaviour
 {
-    [SerializeField]
-    private float moveSpeed = 2f; // Speed of movement.
+    public speed_of_object soo;
+    
+    
 
     private Vector3 startPosition; // Updated to Vector3.
     private float direction = 1f; // Start moving right.
@@ -17,7 +18,15 @@ public class moving_the_object : MonoBehaviour
 
     private void Update()
     {
+        if(soo == null)
+        {
+            soo = GameObject.FindObjectOfType<speed_of_object>();
+        }
+
+
         // Move the object left within the specified range.
-        transform.position += Vector3.left * moveSpeed * Time.deltaTime; // Use Vector3 for movement.
+        transform.position += Vector3.left * soo.movespeed * Time.deltaTime; // Use Vector3 for movement.
+
+        
     }
 }
