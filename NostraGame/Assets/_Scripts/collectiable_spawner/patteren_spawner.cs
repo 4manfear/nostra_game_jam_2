@@ -28,6 +28,16 @@ public class patteren_spawner : MonoBehaviour
 
     [SerializeField]
     private GameObject spawnPatternObject;
+    [SerializeField]
+    private GameObject spawnPatternObject1;
+    [SerializeField]
+    private GameObject spawnPatternObject2;
+    [SerializeField]
+    private GameObject spawnPatternObject3;
+    [SerializeField]
+    private GameObject spawnPatternObject4;
+    [SerializeField]
+    private GameObject spawn_food;
 
     [SerializeField]
     private float timeGap = 2f; // Time gap between spawns.
@@ -81,10 +91,12 @@ public class patteren_spawner : MonoBehaviour
         if(randomnumber_for_mouse_and_wall / 2==0 )
         {
             Debug.Log("yo it is divisible" + randomnumber_for_mouse_and_wall);
+            Instantiate(mouse, obsical_spawner_position.position, UnityEngine.Quaternion.identity);
         }
         else if(randomnumber_for_mouse_and_wall /2!=0)
         {
             Debug.Log("it is not dividible" + randomnumber_for_mouse_and_wall);
+            Instantiate(wall, obsical_spawner_position.position, UnityEngine.Quaternion.identity);
         }
 
         

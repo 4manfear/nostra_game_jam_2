@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Ground
   - Cat
+  - Mouse
   layers:
   - Default
   - TransparentFX
