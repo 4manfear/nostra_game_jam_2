@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/PalaceMap.unity
     guid: 85d923fa40131514380d63b2daf48528
   - enabled: 1
-    path: Assets/Scenes/LocationSelect.unity
+    path: Assets/Scenes/PalaceLobby.unity
     guid: 7f7f8117e70579649a52f9435834d560
   - enabled: 1
     path: Assets/Scenes/BeachMap.unity
