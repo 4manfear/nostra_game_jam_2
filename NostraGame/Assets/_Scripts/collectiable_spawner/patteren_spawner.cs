@@ -76,12 +76,32 @@ public class patteren_spawner : MonoBehaviour
 
     private void SpawnPattern()
     {
-        randomNumber = UnityEngine.Random.Range(0, 6); // Generate random number.
+        randomNumber = UnityEngine.Random.Range(0, 8); // Generate random number.
         Debug.Log("Generated Random Number: " + randomNumber);
 
         if (randomNumber == 0) // Spawn only if the random number is 0.
         {
             Instantiate(spawnPatternObject, spawnPosition.position, UnityEngine.Quaternion.identity);
+        }
+        if (randomNumber == 1) // Spawn only if the random number is 0.
+        {
+            Instantiate(spawnPatternObject1, spawnPosition.position, UnityEngine.Quaternion.identity);
+        } 
+        if (randomNumber == 2) // Spawn only if the random number is 0.
+        {
+            Instantiate(spawnPatternObject2, spawnPosition.position, UnityEngine.Quaternion.identity);
+        } 
+        if (randomNumber == 3) // Spawn only if the random number is 0.
+        {
+            Instantiate(spawnPatternObject3, spawnPosition.position, UnityEngine.Quaternion.identity);
+        } 
+        if (randomNumber == 4) // Spawn only if the random number is 0.
+        {
+            Instantiate(spawnPatternObject4, spawnPosition.position, UnityEngine.Quaternion.identity);
+        }
+        if (randomNumber > 4)
+        {
+            Instantiate(spawn_food, spawnPosition.position, UnityEngine.Quaternion.identity);
         }
     }
 

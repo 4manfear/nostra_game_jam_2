@@ -5,8 +5,8 @@ using UnityEngine;
 public class moving_the_object : MonoBehaviour
 {
     public speed_of_object soo;
-    
-    
+
+    public float time_to_get_destroyed_after_spawn = 10f;
 
     private Vector3 startPosition; // Updated to Vector3.
     private float direction = 1f; // Start moving right.
@@ -14,6 +14,7 @@ public class moving_the_object : MonoBehaviour
     private void Start()
     {
         startPosition = transform.position; // Capture the initial 3D position.
+        Destroy(gameObject, time_to_get_destroyed_after_spawn);
     }
 
     private void Update()

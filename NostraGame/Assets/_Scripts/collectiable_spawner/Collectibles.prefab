@@ -50,7 +50,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 631d9d208ddf30e4fa1064c0260d200b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 2
+  soo: {fileID: 0}
 --- !u!1 &3446089645419674835
 GameObject:
   m_ObjectHideFlags: 0
@@ -62,7 +62,6 @@ GameObject:
   - component: {fileID: 8029108114687385639}
   - component: {fileID: 8578567073831393755}
   - component: {fileID: 569063481826038251}
-  - component: {fileID: 94620425462020378}
   m_Layer: 0
   m_Name: fish (4)
   m_TagString: Untagged
@@ -182,19 +181,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.024, y: 1.024}
   m_EdgeRadius: 0
---- !u!114 &94620425462020378
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3446089645419674835}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7c3c6842981b9fc4aa99f8b58f73805e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coin_scritable_object: {fileID: 11400000, guid: b5361ed9473e81049822b3aca7000eba, type: 2}
 --- !u!1 &4438605737755761466
 GameObject:
   m_ObjectHideFlags: 0
@@ -206,7 +192,6 @@ GameObject:
   - component: {fileID: 925363099892663453}
   - component: {fileID: 6662006889268550599}
   - component: {fileID: 1989555856391525829}
-  - component: {fileID: 418506778597560710}
   m_Layer: 0
   m_Name: fish (1)
   m_TagString: Untagged
@@ -326,19 +311,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.024, y: 1.024}
   m_EdgeRadius: 0
---- !u!114 &418506778597560710
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4438605737755761466}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7c3c6842981b9fc4aa99f8b58f73805e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coin_scritable_object: {fileID: 11400000, guid: b5361ed9473e81049822b3aca7000eba, type: 2}
 --- !u!1 &4471819258682397468
 GameObject:
   m_ObjectHideFlags: 0
@@ -350,7 +322,6 @@ GameObject:
   - component: {fileID: 3500918311258925009}
   - component: {fileID: 885371900090470571}
   - component: {fileID: 451790463591317655}
-  - component: {fileID: 8740042446134270046}
   m_Layer: 0
   m_Name: fish (2)
   m_TagString: Untagged
@@ -470,19 +441,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.024, y: 1.024}
   m_EdgeRadius: 0
---- !u!114 &8740042446134270046
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4471819258682397468}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7c3c6842981b9fc4aa99f8b58f73805e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coin_scritable_object: {fileID: 11400000, guid: b5361ed9473e81049822b3aca7000eba, type: 2}
 --- !u!1 &4728534514126096347
 GameObject:
   m_ObjectHideFlags: 0
@@ -494,7 +452,6 @@ GameObject:
   - component: {fileID: 3562234134551991196}
   - component: {fileID: 6670140615993870874}
   - component: {fileID: 1636011451005404497}
-  - component: {fileID: 4087992876477660140}
   m_Layer: 0
   m_Name: fish (3)
   m_TagString: Untagged
@@ -614,19 +571,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.024, y: 1.024}
   m_EdgeRadius: 0
---- !u!114 &4087992876477660140
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4728534514126096347}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7c3c6842981b9fc4aa99f8b58f73805e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coin_scritable_object: {fileID: 11400000, guid: b5361ed9473e81049822b3aca7000eba, type: 2}
 --- !u!1 &4740781161511304265
 GameObject:
   m_ObjectHideFlags: 0
@@ -638,7 +582,6 @@ GameObject:
   - component: {fileID: 1305396246877366710}
   - component: {fileID: 8504026227771500721}
   - component: {fileID: 8992410104079594683}
-  - component: {fileID: 7788689863712199265}
   m_Layer: 0
   m_Name: fish
   m_TagString: Untagged
@@ -758,19 +701,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.024, y: 1.024}
   m_EdgeRadius: 0
---- !u!114 &7788689863712199265
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4740781161511304265}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7c3c6842981b9fc4aa99f8b58f73805e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coin_scritable_object: {fileID: 11400000, guid: b5361ed9473e81049822b3aca7000eba, type: 2}
 --- !u!1 &7639737107304496595
 GameObject:
   m_ObjectHideFlags: 0
@@ -782,7 +712,6 @@ GameObject:
   - component: {fileID: 1502199583047318030}
   - component: {fileID: 1541544879816487484}
   - component: {fileID: 8385280259033620640}
-  - component: {fileID: 8344740565077800090}
   m_Layer: 0
   m_Name: fish (5)
   m_TagString: Untagged
@@ -902,16 +831,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.024, y: 1.024}
   m_EdgeRadius: 0
---- !u!114 &8344740565077800090
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7639737107304496595}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7c3c6842981b9fc4aa99f8b58f73805e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coin_scritable_object: {fileID: 11400000, guid: b5361ed9473e81049822b3aca7000eba, type: 2}

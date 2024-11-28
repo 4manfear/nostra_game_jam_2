@@ -2299,6 +2299,10 @@ MonoBehaviour:
   evolve_slider: {fileID: 856190643}
   food_count: 0
   maxfood_to_evolve: 50
+  minimum_food_to_evolve: 50
+  cat_stage_1: 0
+  cat_stage_2: 0
+  cat_stage_3: 0
 --- !u!4 &765091752
 Transform:
   m_ObjectHideFlags: 0
@@ -2753,7 +2757,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpForce: 7
   isGrounded: 0
-  distance_to_attack: 0
+  canDoubleJump: 0
+  jumpButton: {fileID: 1613725156}
+  distance_to_attack: 2
+  foodcount: {fileID: 0}
 --- !u!61 &1095354299
 BoxCollider2D:
   m_ObjectHideFlags: 0
