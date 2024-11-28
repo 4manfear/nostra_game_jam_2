@@ -5,7 +5,7 @@ public class PlayerJump : MonoBehaviour
 {
     public float jumpForce = 10f; // Adjust as needed
     private Rigidbody2D rb;
-    private bool isGrounded = true; // Check if the player is on the ground
+    public bool isGrounded ; // Check if the player is on the ground
 
     [Header("attack_ability")]
     [SerializeField]
@@ -21,6 +21,7 @@ public class PlayerJump : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Space))
         {
+            Debug.Log("space press huaa ");
             Jump();
         }
     }
