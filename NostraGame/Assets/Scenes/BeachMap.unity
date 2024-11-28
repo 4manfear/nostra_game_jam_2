@@ -2253,6 +2253,67 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 570339809}
   m_CullTransparentMesh: 1
+--- !u!1 &765091749
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 765091752}
+  - component: {fileID: 765091751}
+  - component: {fileID: 765091750}
+  m_Layer: 0
+  m_Name: manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &765091750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 765091749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a02e7ba228452c44c94bdee3ebd8c9b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  all_Audio_pause: 1
+--- !u!114 &765091751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 765091749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39b6a7d5f3c59624a97ae75ed898d89c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  evolve_slider: {fileID: 856190643}
+  food_count: 0
+  maxfood_to_evolve: 50
+--- !u!4 &765091752
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 765091749}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 724.4747, y: 664.20184, z: -6.1777697}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &817280770
 GameObject:
   m_ObjectHideFlags: 0
@@ -2690,6 +2751,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpForce: 7
+  isGrounded: 0
   distance_to_attack: 0
 --- !u!61 &1095354299
 BoxCollider2D:
@@ -9634,3 +9696,4 @@ SceneRoots:
   - {fileID: 187558786}
   - {fileID: 1095354297}
   - {fileID: 1210332629}
+  - {fileID: 765091752}
