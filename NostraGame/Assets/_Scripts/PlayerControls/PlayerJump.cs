@@ -5,7 +5,7 @@ public class PlayerJump : MonoBehaviour
 {
     public float jumpForce = 10f; // Adjust as needed
     private Rigidbody2D rb;
-    private bool isGrounded = true; // Check if the player is on the ground
+    public bool isGrounded ; // Check if the player is on the ground
 
     [Header("attack_ability")]
     [SerializeField]
@@ -17,12 +17,22 @@ public class PlayerJump : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            Debug.Log("space press huaa ");
+            Jump();
+        }
+    }
+
     public void Jump()
     {
         if (isGrounded)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             isGrounded = false; // Prevent double jumps
+            Debug.Log("jump");
         }
     }
 
