@@ -2360,10 +2360,10 @@ GameObject:
   m_Component:
   - component: {fileID: 786873412}
   - component: {fileID: 786873411}
-  - component: {fileID: 786873410}
   - component: {fileID: 786873409}
   - component: {fileID: 786873414}
   - component: {fileID: 786873413}
+  - component: {fileID: 786873415}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -2385,27 +2385,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpForce: 10
   distance_to_attack: 3
---- !u!95 &786873410
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 786873408}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2fda686d5be85b54bb50e916ff9fe2fc, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!212 &786873411
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2447,12 +2426,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 156613280, guid: 7d3a2ada740b50245a3e9adf248118ff, type: 3}
+  m_Sprite: {fileID: -1116539066, guid: 7d3a2ada740b50245a3e9adf248118ff, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 4.2000003, y: 4.27079}
+  m_Size: {x: 4.2, y: 4.26}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -2536,8 +2515,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.6800001, y: 1.7083161}
-    newSize: {x: 4.2000003, y: 4.27079}
+    oldSize: {x: 2.048, y: 2.048}
+    newSize: {x: 4.2, y: 4.26}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -2545,6 +2524,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.6800001, y: 1.7083161}
   m_EdgeRadius: 0
+--- !u!95 &786873415
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 786873408}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 376a9614878d6474a9df98206d169028, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &817280770
 GameObject:
   m_ObjectHideFlags: 0
