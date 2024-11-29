@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< Updated upstream:NostraGame/Assets/_Scripts/animation_changer.meta
 guid: 82a1a5594eb75a840ade5444f87444b6
+========
+guid: 41ab068501e42124593abc3bd8d43b68
+>>>>>>>> Stashed changes:NostraGame/Assets/Materials.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

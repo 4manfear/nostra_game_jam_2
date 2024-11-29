@@ -1,0 +1,1337 @@
+fileFormatVersion: 2
+guid: 0241eb7711a432748b16614849471dfb
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 250
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Cooki_0
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 3552
+        width: 408
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d648406942a958a468b50928f8c3b1f6
+      internalID: 1780565260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cooki_1
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 3548
+        width: 408
+        height: 396
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb5da40ba05e31e4ab68d586d146bc22
+      internalID: -1644645895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cooki_2
+      rect:
+        serializedVersion: 2
+        x: 1388
+        y: 3548
+        width: 408
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 438d94834f4bd674d90b41c376dff231
+      internalID: -1987670066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cooki_3
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 3548
+        width: 408
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f619595b4b15a54fac355db8c08a768
+      internalID: -574249871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cooki_4
+      rect:
+        serializedVersion: 2
+        x: 2612
+        y: 3548
+        width: 408
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bb58673c48a39d468026b8e7914f0f3
+      internalID: -1601684737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cooki_5
+      rect:
+        serializedVersion: 2
+        x: 3224
+        y: 3548
+        width: 408
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c094f5ed68d2d5d478252d088fcf1297
+      internalID: 1626259113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cooki_6
+      rect:
+        serializedVersion: 2
+        x: 3836
+        y: 3544
+        width: 408
+        height: 396
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1cae90f11c969b46ad491f56cb537a4
+      internalID: 771117642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cooki_7
+      rect:
+        serializedVersion: 2
+        x: 4448
+        y: 3544
+        width: 408
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 546680c79e683824096e651d6288d1a9
+      internalID: 517733470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cooki_8
+      rect:
+        serializedVersion: 2
+        x: 5060
+        y: 3544
+        width: 408
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 070e4f52f5343b440abbd67899b4cd83
+      internalID: -1794150338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cooki_9
+      rect:
+        serializedVersion: 2
+        x: 5672
+        y: 3544
+        width: 408
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bd6ce3e03f1a1e43948fd3bc55e7d4e
+      internalID: 1338486135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cooki_10
+      rect:
+        serializedVersion: 2
+        x: 6284
+        y: 3544
+        width: 408
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7604390642678a41ae7b0d7ea864b12
+      internalID: 2095912739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cooki_11
+      rect:
+        serializedVersion: 2
+        x: 6896
+        y: 3540
+        width: 408
+        height: 396
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49b212c0fae6a7d438bb4609c445e8d9
+      internalID: -2006346896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cooki_12
+      rect:
+        serializedVersion: 2
+        x: 7508
+        y: 3540
+        width: 408
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1ae1afe96bfcad4fb14646de1446c2e
+      internalID: 1906642802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cooki_13
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 2928
+        width: 408
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44d899c6647bb264193998bf5d2b019f
+      internalID: 2028204042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cooki_14
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 2928
+        width: 408
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f16beea18c810c5449d155e967edb211
+      internalID: 698692473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cooki_15
+      rect:
+        serializedVersion: 2
+        x: 1388
+        y: 2928
+        width: 408
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f37cbc8629700d1438ed53771c85319b
+      internalID: -1030516457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cooki_16
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 2924
+        width: 408
+        height: 396
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc426f2c55d394f45a64d96c14557402
+      internalID: 500222666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cooki_17
+      rect:
+        serializedVersion: 2
+        x: 2612
+        y: 2924
+        width: 408
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dd1e4704612cde4c9ec986604c8afc4
+      internalID: -802676443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cooki_18
+      rect:
+        serializedVersion: 2
+        x: 3224
+        y: 2924
+        width: 408
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aed9ff1b2f6d7d41b95479bbcc572fa
+      internalID: -396307311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cooki_19
+      rect:
+        serializedVersion: 2
+        x: 3836
+        y: 2924
+        width: 408
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e092ab617d9179439a8b6cb20b50b4b
+      internalID: -2072153874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cooki_20
+      rect:
+        serializedVersion: 2
+        x: 4448
+        y: 2920
+        width: 408
+        height: 396
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be83025132d2f0b43961bad07e448643
+      internalID: 423125604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cooki_21
+      rect:
+        serializedVersion: 2
+        x: 5060
+        y: 2920
+        width: 408
+        height: 396
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49261c954aa1b44448fb41e7aee27348
+      internalID: 1119637054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cooki_22
+      rect:
+        serializedVersion: 2
+        x: 5672
+        y: 2920
+        width: 408
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf0e30353f620ba42a7e4baac36aa307
+      internalID: 899583585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cooki_23
+      rect:
+        serializedVersion: 2
+        x: 6284
+        y: 2920
+        width: 408
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3f8664886a0de341be2b0f7d855e67f
+      internalID: -1552284150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cooki_24
+      rect:
+        serializedVersion: 2
+        x: 6896
+        y: 2920
+        width: 408
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eddc999278f08e244a773cdd7dedaedb
+      internalID: 1516050818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cooki_25
+      rect:
+        serializedVersion: 2
+        x: 7508
+        y: 2916
+        width: 408
+        height: 396
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0fdf85a9cb8a4a4d9781e0e27e0f641
+      internalID: -1529711186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cooki_26
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 2308
+        width: 408
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7a299b36d755ca499a5539cc5f127d6
+      internalID: 873523731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cooki_27
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 2308
+        width: 408
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13df71e43f7e07a47a2c49fa4acf132f
+      internalID: 105102585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cooki_28
+      rect:
+        serializedVersion: 2
+        x: 1388
+        y: 2308
+        width: 408
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef5690210c585d24fbaccd7046c2550b
+      internalID: -318683911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cooki_29
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 2308
+        width: 408
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbd8639bf1e48f04698f1fc965ed734b
+      internalID: -105032274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cooki_30
+      rect:
+        serializedVersion: 2
+        x: 2612
+        y: 2308
+        width: 408
+        height: 396
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4051f58dc90db74e8a2acf5ca89a498
+      internalID: -629083212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cooki_31
+      rect:
+        serializedVersion: 2
+        x: 3224
+        y: 2312
+        width: 408
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c62a8d483df9da46aa08ca444301731
+      internalID: -174686539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cooki_32
+      rect:
+        serializedVersion: 2
+        x: 3836
+        y: 2312
+        width: 408
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3aff5f9cc8d88584a928a16fbf163eb3
+      internalID: -378886230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cooki_33
+      rect:
+        serializedVersion: 2
+        x: 4448
+        y: 2312
+        width: 408
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef1d1d22844d72c489254be203c0d89d
+      internalID: -1617840698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cooki_34
+      rect:
+        serializedVersion: 2
+        x: 5060
+        y: 2312
+        width: 408
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd074ef99ec957a48b0e3646db096db2
+      internalID: 288547967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cooki_35
+      rect:
+        serializedVersion: 2
+        x: 5672
+        y: 2312
+        width: 408
+        height: 396
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3a0732d250dc5e41b7d938860a6dec4
+      internalID: 148108574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cooki_36
+      rect:
+        serializedVersion: 2
+        x: 6284
+        y: 2312
+        width: 408
+        height: 396
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0b708824dad4d04c9029e6774389b74
+      internalID: 57731526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cooki_37
+      rect:
+        serializedVersion: 2
+        x: 6896
+        y: 2316
+        width: 408
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c186175111c7ec144b6d76aa24cb8c94
+      internalID: 1807871819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cooki_38
+      rect:
+        serializedVersion: 2
+        x: 7508
+        y: 2316
+        width: 408
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df9fbdd1327bc3c43bf0436fcb98d03b
+      internalID: 626147761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cooki_39
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 1704
+        width: 408
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60be855f0fe698a4a9ffa96749a37f49
+      internalID: -1432918376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cooki_40
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 1704
+        width: 408
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f54ef3fb9a4c8e744b304e7da75f725b
+      internalID: 2059242292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cooki_41
+      rect:
+        serializedVersion: 2
+        x: 1388
+        y: 1704
+        width: 408
+        height: 396
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1b7ba85f2721af49a7a0b139744eb08
+      internalID: -1479410280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cooki_42
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1704
+        width: 408
+        height: 396
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee4993a1bae18b34ab8ab241f325a48b
+      internalID: -1295295752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cooki_43
+      rect:
+        serializedVersion: 2
+        x: 2612
+        y: 1708
+        width: 408
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f73202b076dcacd448a97296c3582622
+      internalID: 366170172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cooki_44
+      rect:
+        serializedVersion: 2
+        x: 3224
+        y: 1708
+        width: 408
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f48db39b02563bc4fb4001fca3700493
+      internalID: -389642718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cooki_45
+      rect:
+        serializedVersion: 2
+        x: 3836
+        y: 1708
+        width: 408
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f488fb106caed340937b390dcb863ba
+      internalID: -1687185346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cooki_46
+      rect:
+        serializedVersion: 2
+        x: 4448
+        y: 1708
+        width: 408
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 035bdae497bcc104dae121c3baa6a1a4
+      internalID: 395142611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cooki_47
+      rect:
+        serializedVersion: 2
+        x: 5060
+        y: 1708
+        width: 408
+        height: 396
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3333351943cca5246857ff7990a4196f
+      internalID: 74989124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cooki_48
+      rect:
+        serializedVersion: 2
+        x: 5672
+        y: 1712
+        width: 408
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f396e65730b60594cbad26af6d727c8c
+      internalID: -169915638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cooki_49
+      rect:
+        serializedVersion: 2
+        x: 6284
+        y: 1712
+        width: 408
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf123815678fec74aad4294a786333a0
+      internalID: -1089913217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cooki_50
+      rect:
+        serializedVersion: 2
+        x: 6896
+        y: 1712
+        width: 408
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad18e629a54ed9f4fa62bd3c195bf7b0
+      internalID: -2087385270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cooki_51
+      rect:
+        serializedVersion: 2
+        x: 7508
+        y: 1712
+        width: 408
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcdc04a06a6220a479e030c3ddb65ab4
+      internalID: 1736836231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cooki_52
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 1100
+        width: 408
+        height: 396
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c2bd0e251400924b8970ae5030d33a2
+      internalID: 431529506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cooki_53
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 1100
+        width: 408
+        height: 396
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 140180ab94b3bb249a522f77db4dc577
+      internalID: -1434084796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cooki_54
+      rect:
+        serializedVersion: 2
+        x: 1388
+        y: 1104
+        width: 408
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 226b7fd96793e3649867c602ebf59c55
+      internalID: 1688796399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Cooki_0: 1780565260
+      Cooki_1: -1644645895
+      Cooki_10: 2095912739
+      Cooki_11: -2006346896
+      Cooki_12: 1906642802
+      Cooki_13: 2028204042
+      Cooki_14: 698692473
+      Cooki_15: -1030516457
+      Cooki_16: 500222666
+      Cooki_17: -802676443
+      Cooki_18: -396307311
+      Cooki_19: -2072153874
+      Cooki_2: -1987670066
+      Cooki_20: 423125604
+      Cooki_21: 1119637054
+      Cooki_22: 899583585
+      Cooki_23: -1552284150
+      Cooki_24: 1516050818
+      Cooki_25: -1529711186
+      Cooki_26: 873523731
+      Cooki_27: 105102585
+      Cooki_28: -318683911
+      Cooki_29: -105032274
+      Cooki_3: -574249871
+      Cooki_30: -629083212
+      Cooki_31: -174686539
+      Cooki_32: -378886230
+      Cooki_33: -1617840698
+      Cooki_34: 288547967
+      Cooki_35: 148108574
+      Cooki_36: 57731526
+      Cooki_37: 1807871819
+      Cooki_38: 626147761
+      Cooki_39: -1432918376
+      Cooki_4: -1601684737
+      Cooki_40: 2059242292
+      Cooki_41: -1479410280
+      Cooki_42: -1295295752
+      Cooki_43: 366170172
+      Cooki_44: -389642718
+      Cooki_45: -1687185346
+      Cooki_46: 395142611
+      Cooki_47: 74989124
+      Cooki_48: -169915638
+      Cooki_49: -1089913217
+      Cooki_5: 1626259113
+      Cooki_50: -2087385270
+      Cooki_51: 1736836231
+      Cooki_52: 431529506
+      Cooki_53: -1434084796
+      Cooki_54: 1688796399
+      Cooki_6: 771117642
+      Cooki_7: 517733470
+      Cooki_8: -1794150338
+      Cooki_9: 1338486135
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
