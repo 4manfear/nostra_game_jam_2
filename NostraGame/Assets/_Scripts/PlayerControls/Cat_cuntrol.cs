@@ -124,14 +124,6 @@ public class Cat_cuntrol : MonoBehaviour
     }
 
 
-    public void re_start_level_button(int thissceneindexnumber)
-    {
-        SceneManager.LoadScene(thissceneindexnumber);
-    }
-    public void menu_button(int menusceen)
-    {
-        SceneManager.LoadScene(menusceen);
-    }
 
     public void distance_checkerof_mouse()
     {
@@ -174,9 +166,26 @@ public class Cat_cuntrol : MonoBehaviour
         pause_menu.SetActive(true);
 
     }
+
     public void resume_the_game()
     {
         Time.timeScale = 1f;
         pause_menu.SetActive(false);
     }
+
+    public void re_start_level_button(int thissceneindexnumber)
+    {
+        SceneManager.LoadScene(thissceneindexnumber);
+    }
+
+    public void menu_button(int menusceen)
+    {
+        SceneManager.LoadScene(menusceen);
+    }
+
+    public void quit_button()
+    {
+        Application.Quit();
+    }
+
 }
