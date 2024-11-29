@@ -13,29 +13,40 @@ public class Cat_cuntrol : MonoBehaviour
     [Header("Double Jump Ability")]
     public bool canDoubleJump = false; // Control whether double jump is allowed.
 
-    [Header("reference of the button which is making the catjump")]
+    [Header("UI Button for Jumping")]
     public Button jumpButton; // Reference to the Jump UI button.
+    public Sprite normalButtonSprite; // Sprite for normal state.
+    public Sprite doubleJumpButtonSprite; // Sprite for indicating double jump.
 
     [Header("Attack Ability")]
     [SerializeField]
     private float distance_to_attack;
 
-    [Header("food counter script reference")]
+    [Header("Food Counter Reference")]
     [SerializeField]
     private food_counter foodcounter;
 
+    private Image buttonImage; // Reference to the Image component of the button.
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
 
-        // Set the button's active state based on the double jump ability.
+        // Get the Image component of the button.
+        if (jumpButton != null)
+            buttonImage = jumpButton.GetComponent<Image>();
+
+        // Set the button's initial sprite and active state.
+        if (buttonImage != null && normalButtonSprite != null)
+            buttonImage.sprite = normalButtonSprite;
+
         if (jumpButton != null)
             jumpButton.gameObject.SetActive(canDoubleJump);
     }
+
     private void Update()
     {
-        if(foodcounter.cat_stage_2==true || foodcounter.cat_stage_3==true)
+        if (foodcounter.cat_stage_2 == true || foodcounter.cat_stage_3 == true)
         {
             canDoubleJump = true;
         }
@@ -43,25 +54,28 @@ public class Cat_cuntrol : MonoBehaviour
         {
             canDoubleJump = false;
         }
-        
     }
 
     public void Jump()
     {
-
-
-
         // Allow jumping if grounded or if double jump is enabled.
         if (jumpCount < 1 || (jumpCount == 1 && canDoubleJump))
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             jumpCount++;
 
-            // If double jump has been executed, disable the button.
-            if (jumpCount == 2 && jumpButton != null && canDoubleJump)
+            // Change the button's sprite to indicate double jump availability.
+            if (jumpCount == 1 && canDoubleJump && buttonImage != null && doubleJumpButtonSprite != null)
             {
-                jumpButton.gameObject.SetActive(false);
-                Debug.Log("Double jump executed!");
+                buttonImage.sprite = doubleJumpButtonSprite;
+                Debug.Log("Button sprite changed for double jump!");
+            }
+
+            // Reset the button sprite after double jump.
+            if (jumpCount == 2 && buttonImage != null && normalButtonSprite != null)
+            {
+                buttonImage.sprite = normalButtonSprite;
+                Debug.Log("Double jump executed, button sprite reset!");
             }
         }
     }
@@ -73,6 +87,10 @@ public class Cat_cuntrol : MonoBehaviour
         {
             isGrounded = true;
             jumpCount = 0; // Reset jump count on landing.
+
+            // Reset the button sprite to normal on landing.
+            if (buttonImage != null && normalButtonSprite != null)
+                buttonImage.sprite = normalButtonSprite;
 
             // Re-enable the jump button if double jump is enabled.
             if (jumpButton != null)
@@ -104,8 +122,13 @@ public class Cat_cuntrol : MonoBehaviour
     {
         canDoubleJump = enableDoubleJump;
 
-        // Update the jump button state based on the ability.
+        // Update the jump button state and sprite based on the ability.
         if (jumpButton != null)
+        {
             jumpButton.gameObject.SetActive(canDoubleJump);
+
+            if (buttonImage != null && normalButtonSprite != null)
+                buttonImage.sprite = normalButtonSprite;
+        }
     }
 }
