@@ -1,7 +1,9 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Cat_cuntrol : MonoBehaviour
 {
@@ -27,9 +29,17 @@ public class Cat_cuntrol : MonoBehaviour
     private food_counter foodcounter;
 
     private Image buttonImage; // Reference to the Image component of the button.
+    [Header("-------------------------------------------------------------------------------------------------------------")]
+    [Header("the game over canvas/ panel")]
+    public GameObject game_over_panel;
 
+    [Header("pause menu panel")]
+    public GameObject pause_menu;
     void Start()
     {
+
+        game_over_panel.SetActive(false);
+
         rb = GetComponent<Rigidbody2D>();
 
         // Get the Image component of the button.
@@ -53,6 +63,14 @@ public class Cat_cuntrol : MonoBehaviour
         else
         {
             canDoubleJump = false;
+        }
+        if (game_over_panel.activeSelf==true)
+        {
+            Time.timeScale = 0f;
+        }
+        else
+        {
+            Time.timeScale = 1f;
         }
     }
 
@@ -96,6 +114,23 @@ public class Cat_cuntrol : MonoBehaviour
             if (jumpButton != null)
                 jumpButton.gameObject.SetActive(canDoubleJump);
         }
+
+        if (collision.gameObject.CompareTag("Mouse"))
+        {
+            game_over_panel.SetActive(true);
+            //Destroy(this.gameObject);
+        }
+
+    }
+
+
+    public void re_start_level_button(int thissceneindexnumber)
+    {
+        SceneManager.LoadScene(thissceneindexnumber);
+    }
+    public void menu_button(int menusceen)
+    {
+        SceneManager.LoadScene(menusceen);
     }
 
     public void distance_checkerof_mouse()
@@ -130,5 +165,18 @@ public class Cat_cuntrol : MonoBehaviour
             if (buttonImage != null && normalButtonSprite != null)
                 buttonImage.sprite = normalButtonSprite;
         }
+    }
+
+
+    public void pauseing_the_game()
+    {
+        Time.timeScale = 0f;
+        pause_menu.SetActive(true);
+
+    }
+    public void resume_the_game()
+    {
+        Time.timeScale = 1f;
+        pause_menu.SetActive(false);
     }
 }
