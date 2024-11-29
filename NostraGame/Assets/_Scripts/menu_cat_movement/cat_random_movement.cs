@@ -31,7 +31,7 @@ public class cat_random_movement : MonoBehaviour
             return;
 
         MoveTowardsTarget();
-        RotateTowardsAnchor();
+        RotateTowardsTarget();
 
         // Check if the player has reached the target position.
         if (Vector2.Distance(transform.position, randomTargetPosition) < 0.1f)
@@ -51,21 +51,20 @@ public class cat_random_movement : MonoBehaviour
         );
     }
 
-    void RotateTowardsAnchor()
+    void RotateTowardsTarget()
     {
-        // Calculate the direction to the anchor point.
-        Vector2 directionToAnchor = (currentAnchorPoint.position - transform.position).normalized;
+        // Determine the direction to the target.
+        Vector2 direction = randomTargetPosition - (Vector2)transform.position;
 
-        // Calculate the angle to rotate towards the anchor.
-        float angle = Mathf.Atan2(directionToAnchor.y, directionToAnchor.x) * Mathf.Rad2Deg;
-
-        // Smoothly rotate towards the anchor point.
-        Quaternion targetRotation = Quaternion.Euler(0, 0, angle);
-        transform.rotation = Quaternion.Lerp(
-            transform.rotation,
-            targetRotation,
-            rotationSpeed * Time.deltaTime
-        );
+        // Flip the Y rotation based on the X direction.
+        if (direction.x > 0) // Moving right
+        {
+            transform.rotation = Quaternion.Euler(0, 0, 0); // Face right
+        }
+        else if (direction.x < 0) // Moving left
+        {
+            transform.rotation = Quaternion.Euler(0, 180, 0); // Face left
+        }
     }
 
     void SetRandomTargetPosition()
