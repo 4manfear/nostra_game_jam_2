@@ -17,9 +17,14 @@ public class food_counter : MonoBehaviour
     public bool cat_stage_2;
     public bool cat_stage_3;
 
-    private void Start()
+    private void Awake()
     {
         cat_stage_1 = true;
+    }
+
+    private void Start()
+    {
+       
         evolve_slider.value = 0;
         evolve_slider.maxValue = maxfood_to_evolve;
     }

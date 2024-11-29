@@ -1818,12 +1818,10 @@ MonoBehaviour:
   isGrounded: 0
   canDoubleJump: 0
   jumpButton: {fileID: 1613725156}
-  normalButtonSprite: {fileID: -551980663, guid: 55e177fbc812620429050a675c38122c, type: 3}
-  doubleJumpButtonSprite: {fileID: -1301900956, guid: 739d79240b27c24449f05069a61abe16, type: 3}
-  distance_to_attack: 0
-  foodcounter: {fileID: 765091751}
-  game_over_panel: {fileID: 521118843}
-  pause_menu: {fileID: 817280770}
+  attackDistance: 3
+  foodCounter: {fileID: 765091751}
+  gameOverPanel: {fileID: 0}
+  pauseMenu: {fileID: 0}
 --- !u!1 &533949403
 GameObject:
   m_ObjectHideFlags: 0
@@ -2435,7 +2433,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a02e7ba228452c44c94bdee3ebd8c9b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  all_Audio_pause: 0
+  all_Audio_pause: 1
 --- !u!114 &765091751
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2451,7 +2449,7 @@ MonoBehaviour:
   evolve_slider: {fileID: 856190643}
   food_count: 0
   maxfood_to_evolve: 50
-  minimum_food_to_evolve: 0
+  minimum_food_to_evolve: 50
   cat_stage_1: 0
   cat_stage_2: 0
   cat_stage_3: 0

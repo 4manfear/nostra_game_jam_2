@@ -4,59 +4,56 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using Unity.VisualScripting;
 
 public class Cat_cuntrol : MonoBehaviour
 {
-    public float jumpForce = 10f; // Adjust as needed.
+    public float jumpForce = 10f;
     private Rigidbody2D rb;
-    public bool isGrounded; // Check if the player is on the ground.
-    private int jumpCount = 0; // To track the number of jumps.
+    public bool isGrounded;
+    private int jumpCount = 0;
 
     [Header("Double Jump Ability")]
-    public bool canDoubleJump = false; // Control whether double jump is allowed.
+    public bool canDoubleJump = false;
 
     [Header("UI Button for Jumping")]
-    public Button jumpButton; // Reference to the Jump UI button.
-    public Sprite normalButtonSprite; // Sprite for normal state.
-    public Sprite doubleJumpButtonSprite; // Sprite for indicating double jump.
+    public Button jumpButton;
 
     [Header("Attack Ability")]
     [SerializeField]
-    private float distance_to_attack;
+    private float attackDistance;
 
     [Header("Food Counter Reference")]
     [SerializeField]
-    private food_counter foodcounter;
+    private food_counter foodCounter;
 
-    private Image buttonImage; // Reference to the Image component of the button.
-    [Header("-------------------------------------------------------------------------------------------------------------")]
-    [Header("the game over canvas/ panel")]
-    public GameObject game_over_panel;
+    [Header("Game Over Panel")]
+    public GameObject gameOverPanel;
 
-    [Header("pause menu panel")]
-    public GameObject pause_menu;
-    void Start()
+    [Header("Pause Menu Panel")]
+    public GameObject pauseMenu;
+
+    private void Awake()
     {
-
-        game_over_panel.SetActive(false);
-
-        rb = GetComponent<Rigidbody2D>();
-
-        // Get the Image component of the button.
         if (jumpButton != null)
-            buttonImage = jumpButton.GetComponent<Image>();
-
-        // Set the button's initial sprite and active state.
-        if (buttonImage != null && normalButtonSprite != null)
-            buttonImage.sprite = normalButtonSprite;
-
-        if (jumpButton != null)
-            jumpButton.gameObject.SetActive(canDoubleJump);
+        {
+            // Ensure the jump button is always active at the start
+            jumpButton.gameObject.SetActive(true);
+        }
     }
 
-    private void Update()
+    void Start()
     {
-        if (foodcounter.cat_stage_2 == true || foodcounter.cat_stage_3 == true)
+        rb = GetComponent<Rigidbody2D>();
+
+        if (gameOverPanel != null)
+            gameOverPanel.SetActive(false);
+    }
+
+    void Update()
+    {
+        // Activate double jump ability when conditions are met (e.g., stages 2 or 3)
+        if (foodCounter != null && (foodCounter.cat_stage_2 || foodCounter.cat_stage_3))
         {
             canDoubleJump = true;
         }
@@ -64,128 +61,121 @@ public class Cat_cuntrol : MonoBehaviour
         {
             canDoubleJump = false;
         }
-        if (game_over_panel.activeSelf==true)
+
+        // Handle Time.timeScale logic (pausing the game on game over)
+        if (gameOverPanel != null && gameOverPanel.activeSelf)
         {
             Time.timeScale = 0f;
         }
-        else
+        else if (pauseMenu == null || !pauseMenu.activeSelf)
         {
             Time.timeScale = 1f;
+        }
+
+        // Ensure jump button is active if grounded or double jump is allowed
+        if (isGrounded || canDoubleJump)
+        {
+            if (jumpButton != null)
+            {
+                jumpButton.gameObject.SetActive(true);
+            }
+        }
+        else
+        {
+            if (jumpButton != null)
+            {
+                jumpButton.gameObject.SetActive(false);
+            }
         }
     }
 
     public void Jump()
     {
-        // Allow jumping if grounded or if double jump is enabled.
-        if (jumpCount < 1 || (jumpCount == 1 && canDoubleJump))
+        if (isGrounded)
         {
-            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-            jumpCount++;
-
-            // Change the button's sprite to indicate double jump availability.
-            if (jumpCount == 1 && canDoubleJump && buttonImage != null && doubleJumpButtonSprite != null)
-            {
-                buttonImage.sprite = doubleJumpButtonSprite;
-                Debug.Log("Button sprite changed for double jump!");
-            }
-
-            // Reset the button sprite after double jump.
-            if (jumpCount == 2 && buttonImage != null && normalButtonSprite != null)
-            {
-                buttonImage.sprite = normalButtonSprite;
-                Debug.Log("Double jump executed, button sprite reset!");
-            }
+            // Reset jump count when the player is grounded (first jump)
+            jumpCount = 1;
+            rb.velocity = new Vector2(rb.velocity.x, jumpForce);  // Perform the first jump
+        }
+        else if (canDoubleJump && jumpCount == 1) // If we are in the air and double jump is available
+        {
+            rb.velocity = new Vector2(rb.velocity.x, jumpForce); // Perform the double jump
+            jumpCount = 2; // Increment jump count after double jump
         }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        // Ensure the player is grounded when touching a platform.
         if (collision.gameObject.CompareTag("Ground"))
         {
             isGrounded = true;
-            jumpCount = 0; // Reset jump count on landing.
-
-            // Reset the button sprite to normal on landing.
-            if (buttonImage != null && normalButtonSprite != null)
-                buttonImage.sprite = normalButtonSprite;
-
-            // Re-enable the jump button if double jump is enabled.
-            if (jumpButton != null)
-                jumpButton.gameObject.SetActive(canDoubleJump);
+            jumpCount = 0; // Reset jump count when grounded
         }
 
         if (collision.gameObject.CompareTag("Mouse"))
         {
-            game_over_panel.SetActive(true);
-            //Destroy(this.gameObject);
+            if (gameOverPanel != null)
+                gameOverPanel.SetActive(true);
         }
-
     }
 
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            isGrounded = false;
+        }
+    }
 
-
-    public void distance_checkerof_mouse()
+    public void CheckMouseDistance()
     {
         GameObject[] enemies = GameObject.FindGameObjectsWithTag("Mouse");
 
         foreach (GameObject enemy in enemies)
         {
-            // Calculate distance between player and the enemy.
             float distance = Vector2.Distance(transform.position, enemy.transform.position);
 
-            // If within attack distance, destroy the enemy.
-            if (distance <= distance_to_attack)
+            if (distance <= attackDistance)
             {
                 Destroy(enemy);
-                Debug.Log("Enemy destroyed!");
-                break; // Destroy one enemy per attack.
+                break;
             }
         }
     }
 
-    // Method to toggle the double jump ability dynamically.
-    public void ToggleDoubleJump(bool enableDoubleJump)
-    {
-        canDoubleJump = enableDoubleJump;
-
-        // Update the jump button state and sprite based on the ability.
-        if (jumpButton != null)
-        {
-            jumpButton.gameObject.SetActive(canDoubleJump);
-
-            if (buttonImage != null && normalButtonSprite != null)
-                buttonImage.sprite = normalButtonSprite;
-        }
-    }
-
-
-    public void pauseing_the_game()
+    public void PauseGame()
     {
         Time.timeScale = 0f;
-        pause_menu.SetActive(true);
-
+        if (pauseMenu != null)
+            pauseMenu.SetActive(true);
     }
 
-    public void resume_the_game()
+    public void ResumeGame()
     {
         Time.timeScale = 1f;
-        pause_menu.SetActive(false);
+        if (pauseMenu != null)
+            pauseMenu.SetActive(false);
     }
 
-    public void re_start_level_button(int thissceneindexnumber)
+    public void RestartLevel(int sceneIndex)
     {
-        SceneManager.LoadScene(thissceneindexnumber);
+        if (sceneIndex >= 0 && sceneIndex < SceneManager.sceneCountInBuildSettings)
+            SceneManager.LoadScene(sceneIndex);
+        else
+            Debug.LogError("Invalid scene index!");
     }
 
-    public void menu_button(int menusceen)
+    public void LoadMenu(int menuSceneIndex)
     {
-        SceneManager.LoadScene(menusceen);
+        if (menuSceneIndex >= 0 && menuSceneIndex < SceneManager.sceneCountInBuildSettings)
+            SceneManager.LoadScene(menuSceneIndex);
+        else
+            Debug.LogError("Invalid menu scene index!");
     }
 
-    public void quit_button()
+    public void QuitGame()
     {
         Application.Quit();
     }
-
 }
+
