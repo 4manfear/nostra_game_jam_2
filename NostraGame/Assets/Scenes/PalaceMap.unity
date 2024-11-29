@@ -1904,7 +1904,7 @@ MonoBehaviour:
   jumpButton: {fileID: 1613725156}
   attackDistance: 3
   foodCounter: {fileID: 765091751}
-  gameOverPanel: {fileID: 0}
+  gameOverPanel: {fileID: 121531}
   pauseMenu: {fileID: 0}
 --- !u!1 &533949403
 GameObject:
@@ -2499,6 +2499,7 @@ GameObject:
   - component: {fileID: 765091751}
   - component: {fileID: 765091754}
   - component: {fileID: 765091753}
+  - component: {fileID: 765091755}
   m_Layer: 0
   m_Name: manager
   m_TagString: Untagged
@@ -2566,6 +2567,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soo: {fileID: 0}
+--- !u!114 &765091755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 765091749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f01955b0d1a9e3e48854a148cc7e12c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coin_scritable_object: {fileID: 11400000, guid: b5361ed9473e81049822b3aca7000eba, type: 2}
+  coint_text_represntatro: {fileID: 1841197071}
 --- !u!1 &802300089
 GameObject:
   m_ObjectHideFlags: 0
@@ -3120,20 +3135,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af2a1d311a7e37546b237ce9fbca5bc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obsical_spawner_position: {fileID: 1018055328}
-  mouse: {fileID: 0}
-  wall: {fileID: 0}
+  obsical_spawner_position: {fileID: 2016482232}
+  mouse: {fileID: 7346214316409255480, guid: f8566e23a82abc04699de320e32851b0, type: 3}
+  wall: {fileID: 7346214316409255480, guid: f8566e23a82abc04699de320e32851b0, type: 3}
   mouse_canspawn: 0
-  time_gap_for_wall_and_mouse: 0
-  wam_time_gap: 0
+  time_gap_for_wall_and_mouse: 2
+  wam_time_gap: 2
   randomnumber_for_mouse_and_wall: 0
   spawnPosition: {fileID: 887403868}
   spawnPatternObject: {fileID: 4740018941659016770, guid: c3e60d1808fb9ae45971585a5f4f2f6b, type: 3}
   spawnPatternObject1: {fileID: 630613211461838903, guid: e5979ddbb6ad8e44eb0fb92916115c13, type: 3}
   spawnPatternObject2: {fileID: 3516229040837564121, guid: 45dbeb520a44b4d4aba5dff5757293a7, type: 3}
   spawnPatternObject3: {fileID: 7319915285837797496, guid: c93a7594bc87fac49ba170e642d9fd42, type: 3}
-  spawnPatternObject4: {fileID: 3516229040837564121, guid: 45dbeb520a44b4d4aba5dff5757293a7, type: 3}
-  spawn_food: {fileID: 1018055326}
+  spawnPatternObject4: {fileID: 1421711719837344730, guid: 3e707f053b036a848b5abd872ad789c3, type: 3}
+  spawn_food: {fileID: 1421711719837344730, guid: 3e707f053b036a848b5abd872ad789c3, type: 3}
   timeGap: 2
   spawnTimer: 0
   randomNumber: 0
@@ -3251,67 +3266,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1
   parallaxMultiplier: 3
---- !u!1 &1018055326
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1018055328}
-  - component: {fileID: 1018055327}
-  m_Layer: 0
-  m_Name: FoodSpawner
-  m_TagString: Untagged
-  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1018055327
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1018055326}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af2a1d311a7e37546b237ce9fbca5bc0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  obsical_spawner_position: {fileID: 0}
-  mouse: {fileID: 0}
-  wall: {fileID: 0}
-  mouse_canspawn: 0
-  time_gap_for_wall_and_mouse: 0
-  wam_time_gap: 0
-  randomnumber_for_mouse_and_wall: 0
-  spawnPosition: {fileID: 0}
-  spawnPatternObject: {fileID: 4740018941659016770, guid: c3e60d1808fb9ae45971585a5f4f2f6b, type: 3}
-  spawnPatternObject1: {fileID: 630613211461838903, guid: e5979ddbb6ad8e44eb0fb92916115c13, type: 3}
-  spawnPatternObject2: {fileID: 3516229040837564121, guid: 45dbeb520a44b4d4aba5dff5757293a7, type: 3}
-  spawnPatternObject3: {fileID: 7319915285837797496, guid: c93a7594bc87fac49ba170e642d9fd42, type: 3}
-  spawnPatternObject4: {fileID: 3516229040837564121, guid: 45dbeb520a44b4d4aba5dff5757293a7, type: 3}
-  spawn_food: {fileID: 0}
-  timeGap: 2
-  spawnTimer: 0
-  randomNumber: 0
---- !u!4 &1018055328
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1018055326}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 18.79, y: 0.56, z: -0.06816355}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1134086858
 GameObject:
   m_ObjectHideFlags: 0
@@ -3735,7 +3689,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1262834832}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 521118850}
+        m_TargetAssemblyTypeName: Cat_cuntrol, Assembly-CSharp
+        m_MethodName: CheckMouseDistance
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1262834832
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6576,12 +6542,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 521118850}
         m_TargetAssemblyTypeName: Cat_cuntrol, Assembly-CSharp
-        m_MethodName: re_start_level_button
+        m_MethodName: RestartLevel
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 5
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -6773,5 +6739,4 @@ SceneRoots:
   - {fileID: 1843649630}
   - {fileID: 499108089}
   - {fileID: 887403868}
-  - {fileID: 1018055328}
   - {fileID: 2016482232}

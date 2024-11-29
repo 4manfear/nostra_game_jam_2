@@ -159,18 +159,17 @@ public class Cat_cuntrol : MonoBehaviour
 
     public void RestartLevel(int sceneIndex)
     {
-        if (sceneIndex >= 0 && sceneIndex < SceneManager.sceneCountInBuildSettings)
-            SceneManager.LoadScene(sceneIndex);
-        else
-            Debug.LogError("Invalid scene index!");
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(sceneIndex);
+        Debug.Log("button_press_huaaa");
+
     }
 
     public void LoadMenu(int menuSceneIndex)
     {
-        if (menuSceneIndex >= 0 && menuSceneIndex < SceneManager.sceneCountInBuildSettings)
-            SceneManager.LoadScene(menuSceneIndex);
-        else
-            Debug.LogError("Invalid menu scene index!");
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(menuSceneIndex);
+        
     }
 
     public void QuitGame()
